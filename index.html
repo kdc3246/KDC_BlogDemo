@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>김동철의 블로그</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">블로그</div>
+        <ul class="nav">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="project.html">Summary</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 메인 섹션 -->
+    <section class="main">
+      <div class="container">
+        <h1>Hello. Welcome to My Blog</h1>
+
+        <!-- 버튼을 클릭하였을 때 새로운 창에 띄우기위해 target="_blank"를 해줌, 버튼을 넣어줘서 디자인해줌 -->
+        <h3>
+          포트폴리오를 위한 블로그:
+          <button onclick="blog()">
+            <a href="https://blog.naver.com/skt32" target="_blank"
+              >KDC_Blog: 김동철 블로그</a
+            >
+          </button>
+        </h3>
+
+        <p>
+          유용한 사이트 3가지:
+          <button onclick="bts1()">
+            <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+          </button>
+          <button onclick="bts2()">
+            <a href="https://rsorry.tistory.com/?page=44" target="_blank"
+              >일상</a
+            >
+          </button>
+          <button onclick="bts3()">
+            <a href="https://studiomeal.com/blog" target="_blank">1분코딩</a>
+          </button>
+        </p>
+
+        <p>현재시간: <span id="time"></span></p>
+        <hr />
+        <p id="link">
+          사용하는 사이트들:
+          <button onclick="btn1()">
+            <a href="https://github.com/" target="_blank">GitHub</a>
+          </button>
+          <button onclick="btn2()">
+            <a href="https://chat.openai.com/chat" target="_blank">chatGPT</a>
+          </button>
+          <button onclick="btn3()">
+            <a href="https://www.comcbt.com/" target="_blank">CBT</a>
+          </button>
+          <button onclick="reset()">Reset</button>
+        </p>
+
+        <p>
+          간단한 Tip:
+          <button onmouseover="tip1()" onmouseout="hide()">
+            어떻게 만들어?
+          </button>
+          <button onmouseover="tip2()" onmouseout="hide()">
+            HTML 컬러 코드
+          </button>
+          <button onmouseover="tip3()" onmouseout="hide()">부트스트랩</button>
+        </p>
+        <hr />
+        <br />
+        <div>
+          <img id="fig" height="500px" />
+          <p id="desc"></p>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>

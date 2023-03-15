@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>김동철의 블로그</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 메뉴 -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">블로그</div>
+        <ul class="nav">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="project.html">Summary</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 메인 섹션 -->
+    <section class="main">
+      <div class="container">
+        <h1>Blog 한눈에 보기</h1>
+        <hr />
+        <div id="link">
+          <h3>1. Python Practice</h3>
+          <button onclick="python()">
+            <a href="https://blog.naver.com/skt32/221538645849" target="_blank">
+              Python Blog
+            </a>
+          </button>
+          <button onmouseover="explan1()" onmouseout="hideExplan()">
+            Python 정의
+          </button>
+          <hr />
+          <h3>2. HTML Practice</h3>
+          <button onclick="html()">
+            <a href="https://blog.naver.com/skt32/222886762355" target="_blank">
+              HTML Blog
+            </a>
+          </button>
+          <button onmouseover="explan2()" onmouseout="hideExplan()">
+            HTML 정의
+          </button>
+          <hr />
+          <h3>3. Git Practice</h3>
+          <button onclick="git()">
+            <a href="https://blog.naver.com/skt32/222886799285" target="_blank">
+              Git Blog
+            </a>
+          </button>
+          <button onmouseover="explan3()" onmouseout="hideExplan()">
+            Git 정의
+          </button>
+          <hr />
+          <p id="desc"></p>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>

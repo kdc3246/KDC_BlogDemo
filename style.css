@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.main {
+  color: white;
+  line-height: 2.5;
+}
+
+/* main의 h1 제목 style 꾸미기 */
+.main h1 {
+  color: white;
+  line-height: 2.5;
+  font-size: 50px;
+}
+
+/* 맨 위에있는 제목과 홈, 자기소개, 등이 있는 곳 */
+.navbar {
+  background-color: white;
+  color: #333;
+  height: 60px;
+}
+
+.navbar .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+/* 가로로 만들어줌*/
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+
+/* navbar 아이디 안에 있는 ul의 자식 li들을 왼쪽으로 20px 만큼 떨어뜨려줬다.*/
+.navbar ul li {
+  margin-left: 20px;
+}
+
+/* logo의 제목인 블로그를 큰 사이즈로 만들어주고 굵기를 bold로 해주었다.*/
+.navbar .logo {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+/* 홈 자기소개 개인정보에 대한 내용을 style 해줌*/
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 홈, 자기소개, 개인정보에 마우스 커서를 가져갔을 때 생기는 이벤트 발생*/
+.navbar a:hover {
+  border-bottom: 2px #333 dashed;
+  color: #088a08;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 5px 10px;
+  font-size: large;
+  font-weight: bold;
+  background-color: white;
+  /* 버튼을 둥그렇게 만들어준다.*/
+  border-radius: 10px;
+  border-width: 0px;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+}
+
+/* 사용하는 사이트들의 이벤트*/
+.link {
+  display: none;
+}
+
+.hide {
+  visibility: hidden;
+}
